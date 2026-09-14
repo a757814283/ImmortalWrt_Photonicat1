@@ -40,6 +40,9 @@ jobs:
 
       - name: 克隆当前仓库 (Clone current repo)
         uses: actions/checkout@v4
+        with:
+          repository: ${{github.repository}}
+          ref: ${{github.ref_name}}
 
       - name: 克隆 ImmortalWrt 仓库 (Clone ImmortalWrt repo)
         uses: actions/checkout@v4
@@ -106,6 +109,9 @@ jobs:
 
       - name: 克隆当前仓库 (Clone current repo)
         uses: actions/checkout@v4
+        with:
+          repository: ${{github.repository}}
+          ref: ${{github.ref_name}}
 
       - name: 克隆 ImmortalWrt 仓库 (Clone ImmortalWrt repo)
         uses: actions/checkout@v4
