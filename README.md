@@ -8,6 +8,9 @@
 2. luci-app-smsjs 短信收发（已调试并包含配置文件）
 3. luci-app-mwan3 多wan自动切换（已调试并包含配置文件）
 
+### 多wan自动切换:
+WAN > WIFI桥接(wwan) > 5G/LTE(wwan_5g)
+
 ### 上网插件：
 
 1. luci-app-passwall
@@ -17,6 +20,8 @@
 
 1. luci-app-cpufreq CPU频率调节
 2. luci-app-zerotier 虚拟局域网
+
+
 
 ## 使用步骤
 
