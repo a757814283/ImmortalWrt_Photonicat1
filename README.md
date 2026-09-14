@@ -1,5 +1,14 @@
 # ImmortalWrt 自动编译
 
+## 适用于光影猫1代的immortalWrt固件
+
+包含必要插件：
+
+上网插件：
+
+其他：
+
+
 ## 使用步骤
 
 ### 正常流程
@@ -117,18 +126,6 @@
    ```shell
    make package/luci-app-pptp-server/compile V=s
    ```
-
-## 我常用的一些插件
-
-1. luci-theme-argon-new(openwrt网页主题)
-
-2. luci-app-openclash(科学上网)
-
-3. luci-app-sqm(智能网速控制)
-
-4. luci-app-ttyd(网页终端)
-
-5. luci-app-upnp(自动upnp)
 
 [//]: # (Kernel Modules->Other modules->kmod-rkp-ipid)
 
