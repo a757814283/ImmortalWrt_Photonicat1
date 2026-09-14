@@ -1,6 +1,6 @@
 # ImmortalWrt 自动编译
 
-## 适用于 光影猫1代 的 immortalWrt 的自用固件
+## 适用于 光影猫 1代 的 immortalWrt 的自用固件
 
 包含必要插件：
 
