@@ -1,13 +1,22 @@
 # ImmortalWrt 自动编译
 
-## 适用于光影猫1代的immortalWrt固件
+## 适用于 光影猫1代 的 immortalWrt 的自用固件
 
 包含必要插件：
 
+luci-app-modernband LTE/5G锁频或切换插件（已调试并包含配置文件）
+luci-app-smsjs 短信收发（已调试并包含配置文件）
+luci-app-mwan3 多wan自动切换（已调试并包含配置文件）
+
 上网插件：
+
+luci-app-passwall
+luci-app-smartdns
 
 其他：
 
+luci-app-cpufreq CPU频率调节
+luci-app-zerotier 虚拟局域网
 
 ## 使用步骤
 
