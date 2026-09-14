@@ -1,0 +1,3 @@
+# 预设配置必须保持 LF：uci 解析的是路由器上的 /etc/config，CRLF 会污染选项值
+# Preset configs must stay LF — they are parsed by uci on the router.
+files/etc/config/* text eol=lf
