@@ -2,21 +2,21 @@
 
 ## 适用于 光影猫 1代 的 immortalWrt 的自用固件
 
-包含必要插件：
+### 包含必要插件：
 
-luci-app-modernband LTE/5G锁频或切换插件（已调试并包含配置文件）
-luci-app-smsjs 短信收发（已调试并包含配置文件）
-luci-app-mwan3 多wan自动切换（已调试并包含配置文件）
+1. luci-app-modernband LTE/5G锁频或切换插件（已调试并包含配置文件）
+2. luci-app-smsjs 短信收发（已调试并包含配置文件）
+3. luci-app-mwan3 多wan自动切换（已调试并包含配置文件）
 
-上网插件：
+### 上网插件：
 
-luci-app-passwall
-luci-app-smartdns
+1. luci-app-passwall
+2. luci-app-smartdns
 
-其他：
+### 其他：
 
-luci-app-cpufreq CPU频率调节
-luci-app-zerotier 虚拟局域网
+1. luci-app-cpufreq CPU频率调节
+2. luci-app-zerotier 虚拟局域网
 
 ## 使用步骤
 
