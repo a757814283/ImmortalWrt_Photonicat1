@@ -1,7 +1,7 @@
 # ImmortalWrt 自动编译
 
 ## 适用于 光影猫 1代 的 immortalWrt 的自用固件
-## 配置文件基于顶配版调试：RM520N-GL + QCNFA765 / WCN6855
+### 配置文件基于顶配版调试：RM520N-GL + QCNFA765 / WCN6855
 
 
 ### 包含必要插件：
