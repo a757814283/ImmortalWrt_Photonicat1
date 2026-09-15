@@ -3,6 +3,11 @@
 # 优先级由 member 的 metric 决定, 数值越小越优先;
 # 高优先级链路恢复后, mwan3 自动切回(以下 up/down 参数控制判定快慢).
 # IPv6 不纳入 mwan3 管理 —— 无 v6 规则, 让 v6 走 main 表.
+#
+# track_ip 必须选本网络真正可达的地址。2026-09-16 实测: 114.114.114.114
+# 从本网络完全不可达(WAN 与 5G 两侧都不通), 会让 mwan3track 每 8 秒刷一条
+# "Check (ping) failed" 日志、把日志环形缓冲冲掉, 排查真问题时看不到别的。
+# 已换成 180.76.76.76(百度DNS, 与阿里/腾讯/Cloudflare 不同运营商)。
 
 config globals 'globals'
 	option mmx_mask '0x3F00'
@@ -18,10 +23,17 @@ config interface 'wan'
 	option down '3'
 	option up '3'
 	list track_ip '223.5.5.5'
-	list track_ip '114.114.114.114'
+	list track_ip '180.76.76.76'
 	list track_ip '119.29.29.29'
 	list track_ip '1.1.1.1'
 	list flush_conntrack 'disconnected'
+	option initial_state 'online'
+	option track_method 'ping'
+	option count '1'
+	option size '56'
+	option max_ttl '60'
+	option failure_interval '5'
+	option recovery_interval '5'
 
 config interface 'wwan'
 	option enabled '1'
@@ -32,7 +44,7 @@ config interface 'wwan'
 	option down '3'
 	option up '3'
 	list track_ip '223.5.5.5'
-	list track_ip '114.114.114.114'
+	list track_ip '180.76.76.76'
 	list track_ip '119.29.29.29'
 	list track_ip '1.1.1.1'
 	list flush_conntrack 'disconnected'
@@ -46,7 +58,7 @@ config interface 'wwan_5g'
 	option down '3'
 	option up '3'
 	list track_ip '223.5.5.5'
-	list track_ip '114.114.114.114'
+	list track_ip '180.76.76.76'
 	list track_ip '119.29.29.29'
 	list flush_conntrack 'disconnected'
 
@@ -80,3 +92,5 @@ config rule 'default_rule_v4'
 	option dest_ip '0.0.0.0/0'
 	option use_policy 'failover'
 	option family 'ipv4'
+	option proto 'all'
+	option sticky '0'
