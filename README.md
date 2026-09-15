@@ -1,4 +1,4 @@
-<img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/00cf5d7f-bbc6-45dc-8d15-4c8fda8f9be1" /># ImmortalWrt 自动编译
+# ImmortalWrt 自动编译
 
 ## 适用于 光影猫 1代 的 immortalWrt 的自用固件
 ### 配置文件基于顶配版调试：RM520N-GL + QCNFA765 / WCN6855
