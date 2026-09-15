@@ -1,4 +1,4 @@
-# ImmortalWrt 自动编译
+<img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/00cf5d7f-bbc6-45dc-8d15-4c8fda8f9be1" /># ImmortalWrt 自动编译
 
 ## 适用于 光影猫 1代 的 immortalWrt 的自用固件
 ### 配置文件基于顶配版调试：RM520N-GL + QCNFA765 / WCN6855
@@ -23,7 +23,9 @@ WAN > WIFI桥接(wwan) > 5G/LTE(wwan_5g)
 1. luci-app-cpufreq CPU频率调节
 2. luci-app-zerotier 虚拟局域网
 
-
+<img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/10dee553-bab4-4d34-af9f-11db3455a62f" />
+<img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/734d07fa-3474-46e2-8f24-b1a56f3d1afe" />
+<img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/ea56631f-3496-4494-a4ca-fdde6615324c" />
 
 ## 使用步骤
 
