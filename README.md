@@ -22,6 +22,7 @@ WAN > WIFI桥接(wwan) > 5G/LTE(wwan_5g)
 
 1. luci-app-cpufreq CPU频率调节
 2. luci-app-zerotier 虚拟局域网
+3. luci-mod-battstatus 电池状态显示
 
 <img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/10dee553-bab4-4d34-af9f-11db3455a62f" />
 <img width="2560" height="1250" alt="image" src="https://github.com/user-attachments/assets/734d07fa-3474-46e2-8f24-b1a56f3d1afe" />
