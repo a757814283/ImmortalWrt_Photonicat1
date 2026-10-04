@@ -17,7 +17,7 @@ WAN > WIFI桥接(wwan) > 5G/LTE(wwan_5g)
 
 1. luci-app-passwall
 2. luci-app-smartdns
-3. luci-app-openclash
+3. luci-app-clash
 
 ### 其他：
 
